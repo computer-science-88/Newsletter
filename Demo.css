@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #333;
+}
+.container{
+    background: url(image2.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+.main-box{
+    border-radius: 10px;
+    color: black;
+    padding: 120px;
+    background: rgba(255,255,255,.6);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+}
+.container h1{
+    font-size: 50px;
+}
+.container p{
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+.email-box{
+    height: 40px;
+    justify-content: center;
+    display: flex;
+}
+.email-box i{
+    background: #2f3542;
+    color: white;
+    width: 40px;
+    line-height: 40px;
+}
+.textBox,.btn{
+    border: none;
+    outline: none;
+}
+.textBox{
+    width: 0px;
+    transition: 0.6s;
+}
+.email-box:hover > .textBox,.textBox:focus{
+    width: 260px;
+    padding: 0 10px;
+}
+.btn{
+    background: #2f3542;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
